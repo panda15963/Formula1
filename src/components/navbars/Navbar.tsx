@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react'
-import { ArrowPathIcon, Bars3Icon, ChartPieIcon, ChevronDownIcon, CursorArrowRaysIcon, FingerPrintIcon, PhoneIcon, PlayCircleIcon, SquaresPlusIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/react';
+import { ArrowPathIcon, Bars3Icon, ChartPieIcon, ChevronDownIcon, CursorArrowRaysIcon, FingerPrintIcon, PhoneIcon, PlayCircleIcon, SquaresPlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router-dom';
 
 const products = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
@@ -9,12 +9,12 @@ const products = [
   { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
   { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
   { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
+];
 
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+];
 
 const company = [
   { name: 'About us', href: '#', description: 'Learn more about our company values and mission to empower others' },
@@ -25,10 +25,10 @@ const company = [
     description: 'Get in touch with our dedicated support team or reach out on our community forums',
   },
   { name: 'Blog', href: '#', description: 'Read our latest announcements and get perspectives from our team' },
-]
+];
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white">
@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <Link to="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img alt="f1_logo" src="" className="h-8 w-auto" />
+            <img alt="f1_logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg" className="h-8 w-auto" />
           </Link>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
@@ -141,11 +141,7 @@ export default function Navbar() {
           <div className="flex items-center gap-x-6">
             <Link to="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
-              />
+              <img alt="f1_logo" src="https://upload.wikimedia.org/wikipedia/commons/6/66/F1_logo.svg" className="h-8 w-auto" />
             </Link>
             <Link
               to="#"
@@ -229,5 +225,5 @@ export default function Navbar() {
         </DialogPanel>
       </Dialog>
     </header>
-  )
+  );
 }
