@@ -34,9 +34,8 @@ export default function Navbar() {
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <Link to="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img alt="f1_logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg" className="h-8 w-auto" />
+          <Link to="/" className="-m-1.5 p-1.5">
+            <img alt="Formula1 Logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg" className="h-8 w-auto" />
           </Link>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
